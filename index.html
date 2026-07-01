@@ -828,10 +828,8 @@ function renderLanding(main){
         <div class="lp-hero-badge">👑 Queens Club Exclusive Marketplace</div>
         <h1 class="lp-headline">Welcome to <span>QueensMart</span></h1>
         <p class="lp-sub">The exclusive marketplace for Queens Club members.<br><strong style="color:var(--gold-light);">Zero commission. 100% sisterhood.</strong></p>
-        <video autoplay muted loop playsinline
-          style="max-width:540px;width:100%;border-radius:14px;box-shadow:0 8px 32px rgba(0,0,0,.45);display:block;margin:0 auto;">
-          <source src="public/oviya_intro.mp4" type="video/mp4">
-        </video>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DaMsfMbsjBx/" data-instgrm-version="14"
+          style="max-width:540px;width:100%;margin:0 auto;"></blockquote>
         <div class="lp-cta-row">
           <button class="btn-primary" style="max-width:230px;" onclick="navigate('browse')">Explore the Marketplace</button>
           <button class="lp-outline-btn" style="color:#fff;border-color:rgba(255,255,255,.5);" onclick="openLoginModal()">Login / Join</button>
@@ -906,6 +904,7 @@ function renderLanding(main){
     </div>
 
   `;
+  if(window.instgrm) window.instgrm.Embeds.process();
 }
 
 /* ============================================================
@@ -1649,5 +1648,6 @@ applyRoleUI();
 navigate('landing');
 
 </script>
+<script async src="//www.instagram.com/embed.js"></script>
 </body>
 </html>
